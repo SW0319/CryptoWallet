@@ -3,18 +3,27 @@
 
     <item
         android:id="@+id/fragment_main"
+        android:icon="@drawable/menuicon_home"
         android:title="홈"/>
 
     <item
-        android:title="지갑"/>
+        android:title="지갑"
+        android:icon="@drawable/menuicon_wallet"
+        />
 
     <item
-        android:title="검색"/>
+        android:title="검색"
+        android:icon="@drawable/menuicon_search"
+        />
 
     <item
-        android:title="차트"/>
+        android:title="차트"
+        android:icon="@drawable/menuicon_chart"
+        />
 
     <item
-        android:title="전체"/>
+        android:title="전체"
+        android:icon="@drawable/menuicon_menu"
+        />
 
 </menu>
