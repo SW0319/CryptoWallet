@@ -12,4 +12,32 @@
         tools:layout="@layout/fragment_main"
         />
 
+    <fragment
+        android:id="@+id/nav_wallet"
+        android:name="com.devcat.myapplication.presentation.ui.MenuFragment"
+        android:label="MenuFragment"
+        tools:layout="@layout/fragment_wallet"/>
+
+    <fragment
+        android:id="@+id/nav_search"
+        android:name="com.devcat.myapplication.presentation.ui.SearchFragment"
+        android:label="SearchFragment"
+        tools:layout="@layout/fragment_search"
+        />
+
+    <fragment
+        android:id="@+id/nav_chart"
+        android:name="com.devcat.myapplication.presentation.ui.ChartFragment"
+        android:label="ChartFragment"
+        tools:layout="@layout/fragment_chart"
+        />
+
+    <fragment
+        android:id="@+id/nav_menu"
+        android:name="com.devcat.myapplication.presentation.ui.MenuFragment"
+        android:label="MenuFragment"
+        tools:layout="@layout/fragment_menu"
+        />
+
+
 </navigation>
