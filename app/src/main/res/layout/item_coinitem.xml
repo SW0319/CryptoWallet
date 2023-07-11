@@ -9,18 +9,20 @@
         android:layout_height="match_parent">
 
         <ImageView
-
+            android:id="@+id/item_coinImage"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:src="@mipmap/ic_launcher"
             />
 
         <TextView
+            android:id="@+id/item_coinName"
             android:layout_marginLeft="10dp"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:text="클레이튼(Klaytn)"/>
         <TextView
+            android:id="@+id/item_coinPrice"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:textAlignment="center"
@@ -28,6 +30,7 @@
             />
 
         <TextView
+            android:id="@+id/item_coinPriceRate"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:text="5.4%"
