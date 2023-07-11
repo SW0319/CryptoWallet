@@ -33,6 +33,7 @@
             android:padding="5dp">
 
             <TextView
+                android:id="@+id/mainPage_title2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="전일 대비 가격 변화"
@@ -49,7 +50,8 @@
                 android:layout_height="wrap_content"
                 android:text="거래소 : BINANCE"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintTop_toTopOf="@id/mainPage_title2"
+                app:layout_constraintBottom_toBottomOf="@id/mainPage_title2"
                 android:fontFamily="@font/scdream4"
                 android:textSize="14sp"
                 android:textColor="@color/black"
