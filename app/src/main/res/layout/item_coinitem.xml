@@ -6,20 +6,23 @@
     <LinearLayout
         android:gravity="center_vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        >
 
         <ImageView
             android:id="@+id/item_coinImage"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:src="@mipmap/ic_launcher"
             />
 
         <TextView
             android:id="@+id/item_coinName"
             android:layout_marginLeft="10dp"
-            android:layout_width="150dp"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
+            android:singleLine="false"
             android:text="클레이튼(Klaytn)"/>
         <TextView
             android:id="@+id/item_coinPrice"
@@ -39,8 +42,5 @@
 
 
     </LinearLayout>
-
-
-
 
 </androidx.cardview.widget.CardView>
