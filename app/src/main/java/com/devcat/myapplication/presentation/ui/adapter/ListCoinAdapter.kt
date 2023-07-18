@@ -6,6 +6,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.recyclerview.widget.RecyclerView
 import com.devcat.myapplication.data.entity.CoinItem
 import com.example.myapplication.databinding.ItemCoinitemBinding
+import java.text.DecimalFormat
 
 class ListCoinAdapter(item : MutableLiveData<List<CoinItem>>) : RecyclerView.Adapter<ListCoinAdapter.ListCoinItem>() {
 
@@ -20,8 +21,8 @@ class ListCoinAdapter(item : MutableLiveData<List<CoinItem>>) : RecyclerView.Ada
 
         listItem[position].apply {
             holder.binding.itemCoinName.text = coinName
-            holder.binding.itemCoinPrice.text = "$price"
-            holder.binding.itemCoinPriceRate.text = "$priceRate"
+            holder.binding.itemCoinPrice.text = "${DecimalFormat("#,###.0").format(price)}"
+            holder.binding.itemCoinPriceRate.text = "${DecimalFormat("#.##").format(priceRate)}"
         }
     }
 

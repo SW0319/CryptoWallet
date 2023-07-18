@@ -16,9 +16,12 @@ class ListCoinViewModel(var item : MutableLiveData<List<CoinItem>>) : BaseViewMo
 
         var list = ArrayList<CoinItem>()
         runBlocking {
-            list.add(ExchangeCoin_Upbit().getPrice("KRW-STEEM"))
-            list.add(ExchangeCoin_Upbit().getPrice("KRW-BTC"))
-            list.add(ExchangeCoin_Upbit().getPrice("KRW-ETH"))
+            list.add(ExchangeCoin_Upbit().getPrice("KRW-STEEM","스팀(STEEM)"))
+            list.add(ExchangeCoin_Upbit().getPrice("KRW-BTC","비트코인(BTC)"))
+            list.add(ExchangeCoin_Upbit().getPrice("KRW-ETH","이더리움(ETH)"))
+            list.add(ExchangeCoin_Upbit().getPrice("KRW-DOGE","도지코인(DOGE)"))
+            list.add(ExchangeCoin_Upbit().getPrice("KRW-TRX","트론(TRX)")
+            )
         }
 
 //        list.add(CoinItem(1,"image","Klay",1000F,5.4F))

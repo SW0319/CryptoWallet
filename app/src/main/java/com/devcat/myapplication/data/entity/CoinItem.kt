@@ -9,7 +9,7 @@ data class CoinItem(
     val coinImage : String,
 
     @SerializedName("market")
-    val coinName : String,
+    var coinName : String,
 
     @SerializedName("trade_price")
     var price : Float,

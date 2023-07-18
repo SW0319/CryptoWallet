@@ -8,6 +8,6 @@ interface ExchangeCoinInterface<T>{
     val exchangeBaseURL : String
     val apiInterface : T
 
-    suspend fun getPrice(markets:String) : CoinItem
+    suspend fun getPrice(markets:String, displayName : String = "") : CoinItem
 
 }
